@@ -45,8 +45,8 @@ function reset() {
 
 function deleteProduct(td) {
   if (confirm("Are you sure you want to delete ?")) {
-    row = td.parentElement.parentElement;
-    table.deleteRow(row.rowIndex);
+    selectedRow = td.parentElement.parentElement;
+    table.deleteRow(selectedRow.rowIndex);
     reset();
   }
 }
